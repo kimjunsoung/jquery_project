@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<style type="text/css">
+li {
+ list-style: none;
+}
+
+.picture{
+ list-style: none;
+ padding:0;
+ margin: 0;
+}
+
+.picture li{
+ float: left;
+ width: 50%;
+}
+
+.picture li a{
+ display: block;
+ margin: 5px;
+ border: 1px;
+ 
+}
+
+.picture li img{
+ display: block;
+ width: 50%;
+ height: auto;
+}
+
+.picture li img:hover{
+ display: block;
+ width: 100%;
+ height: auto;
+}
+
+#header{
+ color: red;
+ font-size: 30px;
+}
+
+</style>
+
+</head>
+<body>
+ <div data-role="page" id="home">
+  <div data-role="header" data-theme="b" data-position="fixed">
+   <h1 id="header">라이더를 위한 지침서</h1>
+  </div>
+  <div data-role="content" style="text-align: center;">
+   <img src="images\backg.jpg">
+   <ul data-role="listview" data-inset="true">
+    <li><a href="#intro">바이크 종류</a></li>
+    <li><a href="#comperny">바이크 회사</a></li>
+    <li><a href="#movie" data-rel="dialog">바이크 영상</a></li>
+    <li><a href="#gallery">중고바이크구매사이트</a></li>
+   </ul>
+  </div>
+  <div data-role="footer" data-position="fixed" data-theme="b" align="center">
+   <p>(주) 바이크몰</p>
+      <address>
+        문의사항 010-1234-5678 <a href="mailto:bikemallk@gmail.com">
+        bikemallk@gmail.com</a>
+      </address>
+      <p>Copyright &copy; All rights reserved.</p>
+  </div>
+ </div>
+ 
+ 
+ <div data-role="page" id="intro" data-theme="b">
+  <div data-role="header" data-theme="b" data-position="fixed">
+   <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+      <h1 id="header">바이크 종류</h1>
+    </div>
+    <div data-role="content" >
+     <div style="text-align: center;">
+      <img src="images/bike1.png">
+     </div>
+     <div data-role="collapsible-set" data-theme="b" 
+     data-content-theme="a">
+      <div data-role="collapsible" data-collapsed="false">
+       <h3>스쿠터(Scooter)</h3>
+       <div  data-role="content"  style="text-align: center;" >
+       <img src="images/bike2.png">
+       </div>
+      </div>
+      <div data-role="collapsible">
+       <h3>비즈니스 바이크(Underbone)</h3>
+       <div style="text-align: center;" >
+       <img src="images/bike3.png">
+       </div>
+      </div>
+      <div data-role="collapsible">
+       <h3>네이키드 바이크(Naked Bike)</h3>
+       <div style="text-align: center;" >
+       <img src="images/bike4.png">
+       </div>
+      </div>
+      <div data-role="collapsible">
+       <h3>크루저 모터사이클(Cruiser Motorcycle)</h3>
+       <div style="text-align: center;" >
+       <img src="images/bike5.png">
+       </div>
+      </div>
+      <div data-role="collapsible">
+       <h3>투어러 모터사이클(Touring Motorcycle)</h3>
+       <div style="text-align: center;" >
+       <img src="images/bike6.png">
+       </div>
+      </div>
+      <div data-role="collapsible">
+       <h3>모터크로스(Motocross)</h3>
+       <div style="text-align: center;" >
+       <img src="images/bike7.png">
+       </div>
+      </div>
+      <div data-role="collapsible">
+       <h3>스포츠 바이크(Sport Bike)</h3>
+       <div style="text-align: center;" >
+       <img src="images/bike8.png">
+       </div>
+      </div>
+      
+     </div>
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="b" align="center">
+   <p>(주) 바이크몰</p>
+      <address>
+        문의사항 010-1234-5678 <a href="mailto:bikemallk@gmail.com">
+        bikemallk@gmail.com</a>
+      </address>
+      <p>Copyright &copy; All rights reserved.</p>
+  </div>
+  </div>
+  
+  <div data-role="page" id="comperny" data-theme="b">
+  <div data-role="header" data-theme="b" data-position="fixed">
+   <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+      <h1 id="header">바이크 회사</h1>
+    </div>
+    <div data-role="content" >
+     <div style="text-align: center;">
+      <img src="images/comperny.png">
+     </div>
+     <div data-role="collapsible-set" data-theme="b" 
+     data-content-theme="a">
+      <div data-role="collapsible" data-collapsed="false">
+       <h3>혼다(HONDA)</h3>
+       <div  data-role="content"  style="text-align: center;" >
+       <a href="https://www.hondakorea.co.kr/motorcycle/main/main.do"><img src="images/honda.png" width="80%"></a>
+       <a href="https://www.hondakorea.co.kr/motorcycle/main/main.do">혼다 공식 사이트</a>
+       </div>
+      </div>
+      <div data-role="collapsible">
+       <h3>가와사키(Kawasaki)</h3>
+       <div style="text-align: center;" >
+       <a href="http://www.kawasakikorea.com/"><img src="images/kawa.png" width="80%"></a>
+       <a href="http://www.kawasakikorea.com/">가와사키 공식 사이트</a>
+       </div>
+      </div>
+      <div data-role="collapsible">
+       <h3>야마하(YAMAHA)</h3>
+       <div style="text-align: center;" >
+       <a href="http://www.ysk.co.kr/"><img src="images/yamaha.png" width="80%"></a>
+       <a href="http://www.ysk.co.kr/">야마하 공식 사이트</a>
+       </div>
+      </div>
+      <div data-role="collapsible">
+       <h3>BMW</h3>
+       <div style="text-align: center;" >
+       <a href="https://www.bmw-motorrad.co.kr/ko/home.html#/filter-all"><img src="images/bmw.png" width="80%"></a>
+       <a href="https://www.bmw-motorrad.co.kr/ko/home.html#/filter-all">BMW 공식 사이트</a>
+       </div>
+      </div>
+      <div data-role="collapsible">
+       <h3>두카티(DUCATI)</h3>
+       <div style="text-align: center;" >
+       <a href="https://www.ducati-korea.com/index.php"><img src="images/ducati.png" width="80%"></a>
+       <a href="https://www.ducati-korea.com/index.php">두카티 공식 사이트</a>
+       </div>
+      </div>
+      
+     </div>
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="b" align="center">
+   <p>(주) 바이크몰</p>
+      <address>
+        문의사항 010-1234-5678 <a href="mailto:bikemallk@gmail.com">
+        bikemallk@gmail.com</a>
+      </address>
+      <p>Copyright &copy; All rights reserved.</p>
+  </div>
+  </div>
+  
+  
+  <div data-role="page" id="movie" data-theme="b">
+    <div data-role="header" data-theme="b" data-position="fixed">
+      <h1 id="header">바이크 영상</h1>
+    </div>
+    <div data-role="content">
+     <div class="ui-bar ui-bar-a">카운터 스트라이크 영상</div>
+     <li><iframe width="100%" height="300" src="https://www.youtube.com/embed/tl4hadSOmfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li><br>
+     <div class="ui-bar ui-bar-a">입문자 영상</div>
+     <li><iframe width="100%" height="300" src="https://www.youtube.com/embed/g-pvPddAdLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li><br>
+     <div class="ui-bar ui-bar-a">중고 바이크 구입요령</div> <br>
+     <li><iframe width="100%" height="300" src="https://www.youtube.com/embed/CR9l3TiHrDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li><br>
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="b" align="center">
+   <p>(주) 바이크몰</p>
+      <address>
+        문의사항 010-1234-5678 <a href="mailto:bikemallk@gmail.com">
+        bikemallk@gmail.com</a>
+      </address>
+      <p>Copyright &copy; All rights reserved.</p>
+  </div>
+  </div>
+  
+
+  <div data-role="page" id="gallery" data-theme="b">
+    <div data-role="header" data-theme="b" data-position="fixed">
+      <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+      <h1 id="header">중고바이크구매사이트</h1>
+    </div>
+    
+    <div data-role="content" >
+     <div style="text-align: center;">
+      <img src="images/r32.png">
+     </div>
+     <div data-role="collapsible-set" data-theme="b" 
+     data-content-theme="a">
+      <div data-role="collapsible" data-collapsed="false">
+       <h3>바튜매</h3>
+       <div  data-role="content"  style="text-align: center;" >
+       <a href="https://cafe.navmener.com/bikecargogo"><img src="images/batu.png" width="80%"></a>
+       <a href="https://cafe.naver.com/bikecargogo">바이크 튜닝 매니아</a>
+       </div>
+      </div>
+      <div data-role="collapsible">
+       <h3>파쏘</h3>
+       <div style="text-align: center;" >
+       <a href="http://www.passo.co.kr/"><img src="images/passo.png" width="80%"></a>
+       <a href="http://www.passo.co.kr/">파쏘 오토바이</a>
+       </div>
+      </div>
+      <div data-role="collapsible">
+       <h3>Bike Station</h3>
+       <div style="text-align: center;" >
+       <a href="https://cafe.naver.com/bikestation7706"><img src="images/station.png" width="80%"></a>
+       <a href="https://cafe.naver.com/bikestation7706">Bike Station</a>
+       </div>
+      </div>
+      <div data-role="collapsible">
+       <h3>중고나라</h3>
+       <div style="text-align: center;" >
+       <a href="https://cafe.naver.com/joonggonara"><img src="images/nara.png" width="80%"></a>
+       <a href="https://cafe.naver.com/joonggonara">중고나라</a>
+       </div>
+      </div>
+      <div data-role="collapsible">
+       <h3>번개장터</h3>
+       <div style="text-align: center;" >
+       <a href="https://m.bunjang.co.kr/"><img src="images/bun.png" width="80%"></a>
+       <a href="https://m.bunjang.co.kr/">번개장터</a>
+       </div>
+      </div>
+      
+     </div>
+    </div>
+    
+    
+    
+    <div data-role="footer" data-position="fixed" data-theme="b" align="center">
+   <p>(주) 바이크몰</p>
+      <address>
+        문의사항 010-1234-5678 <a href="mailto:bikemallk@gmail.com">
+        bikemallk@gmail.com</a>
+      </address>
+      <p>Copyright &copy; All rights reserved.</p>
+  </div>
+  </div>
+  
+</body>
+</html>
